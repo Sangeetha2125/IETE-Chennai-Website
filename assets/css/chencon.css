@@ -123,5 +123,15 @@
   
       padding-bottom: 30px;
     }
+
+    .event-file-options {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+    .learn-more-btn{
+        margin-top: 1%;
+    }
   }
   

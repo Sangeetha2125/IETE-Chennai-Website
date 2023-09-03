@@ -13,7 +13,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   height: 5%;
-  margin-left: 50px;
 }
 
 .events img {
@@ -25,7 +24,7 @@
   background-size: cover;
   border: 0;
   max-width: 96%;
-  margin-left: 40%;
+    margin-left: 40%;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   padding-top: -5%;
@@ -121,7 +120,6 @@
 .events1 {
   background-image: url("https://img.freepik.com/premium-vector/online-education-doodle-seamless-vector-illustration-elearning-pattern-blue-background_582123-6.jpg?w=2000"); /* Specify your background image URL */ /* Specify your background image URL */
   background-size: contain;
-  margin-top: 2cm;
   border-radius: 10px;
 }
 
@@ -132,7 +130,6 @@
   width: 100;
   border-radius: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  margin-top: 10ch;
 }
 
 .events1 .card-img {
@@ -279,3 +276,45 @@
 .events3 .card:hover .card-body .card-title a {
   color: #5fcf80;
 }
+
+@media screen and (max-width: 1100px) {
+    .events img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      margin-bottom: 6%;
+    }
+    .events {
+        margin-top: 3%;
+      background: none;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-right: 0px;
+  
+    }
+    .events .card {
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 0;
+      max-width: 96%;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      padding-top: -50px;
+      margin-left: 0%;
+      margin-right: 0%;
+  
+  
+      padding-bottom: 30px;
+    }
+
+    .event-file-options {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+    .learn-more-btn{
+        margin-top: 1%;
+    }
+  }
+  
