@@ -27,7 +27,7 @@
     justify-content: center;
 }
 .committee{
-    background-image: linear-gradient(to right bottom, #08aab9, #009dd8, #597bd3, #9c4ca5, #b20059);
+    background: linear-gradient(#A7EDE7,#06927b);
     box-shadow: rgba(255,255,255, 0.2) 0px 8px 24px;
     border-radius: 12px;
     filter: grayscale(0.35);
