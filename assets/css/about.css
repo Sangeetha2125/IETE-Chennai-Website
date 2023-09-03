@@ -10,7 +10,7 @@
     margin: 2em auto;
     padding: 2em;
     position: relative;
-    background: url('../assets/img/about.jpeg');
+    background: url('../img/about.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -66,7 +66,7 @@
     border: 2px solid #00014f;
     border-radius: 8px;
     padding: 1em 1.3em;
-    background-image: linear-gradient(rgba(200, 200, 200, 0.9),rgba(255,255,255,0.9)),url('../assets/img/goal.png');
+    background-image: linear-gradient(rgba(200, 200, 200, 0.9),rgba(255,255,255,0.9)),url('../img/goal.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;

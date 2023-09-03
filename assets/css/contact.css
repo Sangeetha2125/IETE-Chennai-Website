@@ -44,13 +44,13 @@
     font-size: 1.1rem;
 }
 .location-info{
-    background: linear-gradient(rgba(230,230,230,0.75),rgba(240,240,240,0.75)),url('../assets/img/location.png');
+    background: linear-gradient(rgba(230,230,230,0.75),rgba(240,240,240,0.75)),url('../img/location.png');
 }
 .email-info{
-    background: linear-gradient(rgba(230,230,230,0.75),rgba(240,240,240,0.75)),url('../assets/img/email.jpg');
+    background: linear-gradient(rgba(230,230,230,0.75),rgba(240,240,240,0.75)),url('../img/email.jpg');
 }
 .call-info{
-    background: linear-gradient(rgba(230,230,230,0.75),rgba(240,240,240,0.75)),url('../assets/img/call.jpg');
+    background: linear-gradient(rgba(230,230,230,0.75),rgba(240,240,240,0.75)),url('../img/call.jpg');
 }
 .contact-form{
     padding: 2em;
