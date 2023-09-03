@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:wght@100;200;300;400;500;600&family=Roboto&family=Rowdies:wght@700&display=swap');
+
+:root {
+  --darkBlue: #242582;
+  --blue: #242FA2;
+  --pink: #F64C72;
+  --gray: #99738E;
+  --aquaBlue: #66FCF1;
+  --greenBlue: #35A29F;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* html {
+  font-size: 62.5%;
+} */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  color: white;
+}
+
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  margin-left: 0.5rem;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+header div span {
+  margin-left: 15px;
+  font-family: 'Rowdies';
+
+}
+header ul {
+  display: flex;
+  transition: all 0.3s linear;
+}
+
+header ul li {
+  margin-right: 2rem;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background: 
+  linear-gradient(to top,rgba(0, 0, 0,0.7), rgba(0, 0, 0, 0.5)),
+  url("../img/w4-transformed.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+header ul li a {
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#ham {
+  display: none;
+}
+
+#close {
+  display: none;
+  margin-right: 1rem;
+}
+
+
+
+@media screen and (max-width:1036px) {
+  #ham {
+    display: block;
+  }
+  header {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  #nav.move {
+    left: 0vw;
+  }
+
+  header .logo {
+    width: 100vw;
+    justify-content: space-between;
+  }
+
+  #ham {
+    margin-right: 0.75rem;
+  }
+
+  header ul {
+    flex-direction: column;
+    background-color: black;
+    height: 95vh;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: -100vw;
+  }
+
+  header ul li a {
+    font-size: 1rem;
+  }
+
+  .logo {
+    padding: 1rem;
+  }
+
+  #close {
+    display: none;
+  }
+}
