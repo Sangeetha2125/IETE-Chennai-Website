@@ -8,7 +8,7 @@
     --headBlue: #02046e;
   }
 .events4 {
-    background-image: url("https://img.freepik.com/free-vector/realistic-hexagonal-background_79603-1645.jpg"); /* Specify your background image URL */ /* Specify your background image URL */
+    background-image: url(../img/events/darkblue_bg.jpg); /* Specify your background image URL */ /* Specify your background image URL */
     background-size: contain;
     margin-top: 2cm;
   }
