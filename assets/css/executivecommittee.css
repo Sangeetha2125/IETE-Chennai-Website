@@ -10,7 +10,7 @@
     margin-bottom: 3em;
     text-align: center;
     color: white;
-    margin-top: 15vh;
+    margin-top: 14vh;
 }
 .committee-container h1{
     text-align: center;
@@ -59,4 +59,9 @@
 .email{
     padding: 1.5em;
     padding-top: 0;
+}
+@media screen and (max-width:1100px) {
+    .committee-container{
+        margin-top: 10vh;
+    }
 }

@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 .join-container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 2em auto;
     background  : linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.4)),url('../img/membership.jpg');
     background-repeat: no-repeat;
@@ -35,7 +35,88 @@
     font-size: 1.25em;
 }
 .join-categories{
-    display: none;
+    max-width: 1300px;
+    margin: 2em auto;
+    border-radius: 12px;
+}
+.join-cat-container{
+    padding: 2em 0;
+}
+.join-cat-container h2.mem-head{
+    text-align: center;
+    font-size: 1.85em;
+    color: rgb(5,5,80);
+    margin-bottom: 0.75em;
+}
+.mem-content{
+    font-size: 1.2em;
+    line-height: 1.75;
+    margin: 1em;
+}
+.categories-flex{
+    display: flex;
+    flex-direction: row;
+    gap:1.5em;
+    justify-content: center;
+    margin: 2em 1em;
+    flex-wrap: wrap;
+}
+.category{
+    padding: 1.75em;
+    flex-grow: 1;
+    background-color: rgb(225,225,240);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.category h2{
+    color: rgb(70, 2, 2);
+    margin-bottom: 0.5em;
+}
+.category .join-list{
+    margin: 1.5em 0;
+    font-size: 1.12em;
+}
+.join-list i{
+    margin-right: 16px;
+    font-size: 1.4em;
+    color: rgb(5, 5, 78);
+}
+.category button{
+    width: 100%;
+    padding: 0.75em;
+    border: none;
+    outline: none;
+    color:white;
+    background-color: rgb(70, 2, 2);
+    font-size: 1.1em;
+    border-radius: 8px;
+    margin-top: 0.25em;
+    transition: 0.25s ease-in-out;
+}
+.category button:hover{
+    cursor: pointer;
+    transform: translateY(6px);
+}
+.category button i{
+    margin-left: 12px;
+}
+.click-underline{
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+    color: rgb(5, 5, 78);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.category ul a{
+    display: block;
+    margin: 1.75em 0;
+    font-size: 1.25em;
+    text-decoration: none;
+    margin-left: 1.5em;
+    color: black;
+}
+.category ul a:hover{
+    text-decoration: underline;
 }
 
 @media screen and (max-width:1300px) {
