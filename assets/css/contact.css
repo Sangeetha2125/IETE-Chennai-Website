@@ -119,4 +119,7 @@
         gap: 0em;
         flex-wrap: wrap;
     }
+    .contact-container{
+        padding: 0 0.5em;
+    }
 }
