@@ -17,6 +17,7 @@
     min-height: 85vh;
     border-radius: 8px;
     filter: grayscale(0.25);
+    margin-top: 20vh;
 }
 .about-iete h1{
    position: absolute;

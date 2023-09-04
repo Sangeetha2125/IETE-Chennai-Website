@@ -86,7 +86,7 @@ header ul li a {
   color: white;
   letter-spacing: 1px;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 header ul li::after {
@@ -117,7 +117,7 @@ header ul li:hover::after {
   cursor: pointer;
 }
 
-@media screen and (max-width:1140px) {
+@media screen and (max-width:1250px) {
   #ham {
     display: block;
     cursor: pointer;
@@ -158,7 +158,7 @@ header ul li:hover::after {
   }
 
   header ul li a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .logo {
@@ -551,6 +551,7 @@ header ul li:hover::after {
   width: 90vw;
   margin: 40px auto;
   box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  margin-top: 18vh;
 }
 
 .h3 {

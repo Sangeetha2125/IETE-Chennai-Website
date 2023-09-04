@@ -8,6 +8,10 @@
   --headBlue: #02046e;
 }
 
+.main {
+  margin-top: 18vh;
+}
+
 .events {
   background-image: url(../img/events/webinar.jpg); /* Specify your background image URL */
   background-repeat: no-repeat;

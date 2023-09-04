@@ -14,7 +14,7 @@ close.addEventListener('click',()=>{
 })
 
 window.addEventListener('resize',()=>{
-  if(window.innerWidth>1140)
+  if(window.innerWidth>1250)
   {
     ham.style.display = "none";
     close.style.display = "none";
@@ -22,7 +22,7 @@ window.addEventListener('resize',()=>{
 })
 
 window.addEventListener('resize',()=>{
-  if(window.innerWidth<1140)
+  if(window.innerWidth<1250)
   {
     ham.style.display = "block";
     close.style.display = "none";
