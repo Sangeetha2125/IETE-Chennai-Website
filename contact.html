@@ -47,33 +47,39 @@
                 </div>
             </div>
             <div class="contact-form">
-                <div class="form-enclose">
-                    <div class="form-grp">
-                        <label for="uname">Enter your Name</label>
-                        <input type="text" id="uname" name="uname">
+                <form action="" method="POST" class="login">
+                    <div class="form-enclose">
+                        <div class="form-grp">
+                            <label for="uname">Enter your Name</label>
+                            <input type="text" id="uname" name="uname">
+                            <div class="error"></div>
+                        </div>
+                        <div class="form-grp">
+                            <label for="email-id">Enter your Email</label>
+                            <input type="email" id="email-id" name="email-id">
+                            <div class="error"></div>
+                        </div>
                     </div>
-                    <div class="form-grp">
-                        <label for="email-id">Enter your Email</label>
-                        <input type="email" id="email-id" name="email-id">
+                    <div class="form-enclose">
+                        <div class="form-grp">
+                            <label for="subject">Enter the Subject</label>
+                            <input type="text" id="subject" name="subject">
+                            <div class="error"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-enclose">
-                    <div class="form-grp">
-                        <label for="subject">Enter the Subject</label>
-                        <input type="text" id="subject" name="subject">
+                    <div class="form-enclose">
+                        <div class="form-grp">
+                            <label for="message">Enter your Message</label>
+                            <textarea name="message" id="message" cols="30" rows="9"></textarea>
+                            <div class="error"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-enclose">
-                    <div class="form-grp">
-                        <label for="message">Enter your Message</label>
-                        <textarea name="message" id="meassage" cols="30" rows="9"></textarea>
+                    <div class="form-enclose">
+                        <div class="form-grp">
+                            <input type="submit">
+                        </div>
                     </div>
-                </div>
-                <div class="form-enclose">
-                    <div class="form-grp">
-                        <button>Submit</button>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
         <div class="map-container">
@@ -89,28 +95,25 @@
                 </div>
                 <div class="footer-links-div">
                     <h4>Navigation</h4>
-                    <a href="/">
+                    <a href="index.html">
                         <p>Home</p>
                     </a>
-                    <a href="/courses">
+                    <a href="about.html">
                         <p>About</p>
                     </a>
-                    <a href="/about">
+                    <a href="executivecommittee.html">
                         <p>Executive Committee</p>
                     </a>
-                    <a href="/about">
+                    <a href="events.html">
                       <p>Events</p>
                     </a>
-                    <a href="/about">
+                    <a href="membership.html">
                       <p>Membership</p>
                     </a>
-                    <a href="/about">
-                      <p>Membership</p>
-                    </a>
-                <a href="/about">
+                <a href="chencon.html">
                   <p>Chencon</p>
               </a>
-              <a href="/about">
+              <a href="contact.html">
                 <p>Contact Us</p>
             </a>
                 </div>
@@ -133,6 +136,77 @@
             </div>
         </div>
     </div>
+    <script>
+        const form = document.querySelector(".login")
+
+form.addEventListener('submit',(e)=>{
+  e.preventDefault();
+  validateInputs();
+})
+
+function validateInputs()
+{
+  message = ''
+  const username = document.querySelector("#uname");
+  const email = document.querySelector("#email-id");
+  const subject = document.querySelector("#subject");
+  const msg = document.querySelector("#message");
+
+  if(username.value === ""){
+    message = "Please fill username !";
+    showerror(username,message);
+  }
+  else
+    showsuccess(username)
+
+  if(email.value===""){
+    message = "Please fill Email !"
+    showerror(email,message);
+  }
+  else 
+    showsuccess(email);
+
+  if(subject.value === '')
+  {
+    message = "Please enter subject !"
+    showerror(subject,message);
+  }
+  else 
+    showsuccess(subject,message);
+
+  if(msg.value === '')
+  {
+    message = "Please enter the message !"
+    showerror(msg,message);
+  }
+  else 
+    showsuccess(msg,message);
+
+}
+
+function showerror(element,message) {
+  const parent = element.parentElement;
+  const error = parent.querySelector('.error');
+  const input = parent.querySelector('input');
+  const textarea = parent.querySelector('textarea');
+  if(textarea)
+    textarea.style.borderColor = "red";
+  else
+    input.style.borderColor = "red";
+  error.innerHTML = message;
+}
+
+function showsuccess(element) {
+  const parent = element.parentElement;
+  const error = parent.querySelector('.error');
+  error.innerHTML = '';
+}
+
+
+
+
+
+    </script>
     <script src="home.js">
 
     </script>

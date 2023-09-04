@@ -124,3 +124,9 @@
         padding: 0 0.5em;
     }
 }
+
+/* Form Section */
+
+.error {
+    color: rgb(216, 8, 8);
+}

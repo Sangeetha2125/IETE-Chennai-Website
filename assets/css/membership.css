@@ -4,9 +4,13 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+.space {
+    height: 18vh
+}
 .join-container{
     max-width: 1300px;
-    margin: 2em auto;
+    margin: 18em auto;
     background  : linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.4)),url('../img/membership.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -14,6 +18,7 @@
     border-radius: 12px;
     min-height: 400px;
     border: 1px solid black;
+    
 }
 .join-us-content{
     max-width: 90%;
