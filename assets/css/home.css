@@ -543,31 +543,3 @@ header ul li:hover::after {
   font-size: 1.03em;
 } */
 
-/* ChenCon Page Style */
-
-.chencon-container {
-  text-align: center;
-  background-color: lightblue;
-  width: 90vw;
-  margin: 40px auto;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
-  margin-top: 18vh;
-}
-
-.h3 {
-  display: block;
-  color: var(--darkBlue);
-  font-size: 1.2em;
-  margin: 35px;
-}
-
-.chencon-para {
-  color: var(--headBlue);
-  margin: 35px;
-  line-height: 25px;
-}
-
-.chencon-container .sub-heading {
-  margin-top: 35px;
-}
-
