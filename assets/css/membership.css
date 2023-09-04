@@ -4,9 +4,20 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+:root {
+    --darkBlue: #242582;
+    --blue: #242fa2;
+    --pink: #f64c72;
+    --gray: #99738e;
+    --aquaBlue: #66fcf1;
+    --greenBlue: #35a29f;
+    --headBlue: #02046e;
+  }
 .join-container{
     max-width: 1200px;
     margin: 2em auto;
+    margin-top: 10%;
     background  : linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.4)),url('../img/membership.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -34,12 +45,139 @@
     color: rgb(5, 5, 78);
     font-size: 1.25em;
 }
-.join-categories{
-    display: none;
-}
+
 
 @media screen and (max-width:1300px) {
     .join-container{
         margin: 2em 1.5em;
     }
 }
+
+.join-categories {
+    padding: 20px;
+    margin: 20px 20px;
+    background-image: url(../img/events/blueblue1.jpg); /* Specify your background image URL */
+    border-radius: 20px;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+.join-categories h2,p{
+    color: white;
+}
+  /* Style the categories-grid container */
+.categories-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Gap between category containers */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px; /* Maximum width for the grid */
+  }
+  
+  /* Style each category container */
+  .category {
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style Corporate Members container */
+  .category:nth-child(1) {
+
+    background-image: url(../img/events/lightbg.jpg); /* Specify your background image URL */
+  }
+  .category h2,h3{
+      color: var(--headBlue);
+  }
+
+  .category h3{
+    color: var(--headBlue);
+    margin-bottom: 10%;
+}
+
+  .category p,a{
+    color: var(--darkBlue);
+}
+  
+  /* Style Non-Corporate Members container */
+  .category:nth-child(2) {
+    background-image: url(../img/events/lightbg.jpg); /* Specify your background image URL */
+  }
+  
+  /* Style Forms container */
+  .category:nth-child(3) {
+    background-image: url(../img/events/lightbg.jpg); /* Specify your background image URL */
+  }
+  
+  /* Style headings and buttons */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p.list-join, p.join-list {
+    margin: 5px 0;
+  }
+  
+  /* Style the "Know More" buttons */
+  button {
+    background-color: #1d78b3; /* Lighter blue button background */
+    color: #ffffff; /* White text on button */
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  button:hover {
+    background-color: #155c97; /* Darker blue on button hover */
+  }
+  
+  /* Style the link to access the forms */
+  .click-underline a {
+    color: #ffffff; /* White text */
+    text-decoration: underline;
+  }
+  
+  /* Style the list of forms */
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li a {
+    color: #1d78b3; /* Lighter blue link color */
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    color: #155c97; /* Darker blue on link hover */
+  }
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .categories-grid {
+      flex-direction: column;
+      gap: 10px; /* Reduced gap between category containers */
+    }
+  
+    .category {
+      width: 100%;
+    }
+  }
+  
+  /* On screens smaller than 480px, further reduce spacing and font size */
+  @media screen and (max-width: 480px) {
+    .categories-grid {
+      padding: 10px;
+    }
+  
+    .category {
+      padding: 10px;
+      font-size: 18px;
+    }
+  }
