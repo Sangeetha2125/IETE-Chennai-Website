@@ -4,21 +4,19 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
 .space {
-    height: 18vh
+    height: 15vh;
 }
 .join-container{
     max-width: 1300px;
-    margin: 18em auto;
+    margin: 2em auto;
     background  : linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.4)),url('../img/membership.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 12px;
     min-height: 400px;
-    border: 1px solid black;
-    
+    border: 1px solid black; 
 }
 .join-us-content{
     max-width: 90%;
@@ -65,6 +63,7 @@
     justify-content: center;
     margin: 2em 1em;
     flex-wrap: wrap;
+    margin-bottom: 0;
 }
 .category{
     padding: 1.75em;
@@ -127,5 +126,13 @@
 @media screen and (max-width:1300px) {
     .join-container{
         margin: 2em 1.5em;
+    }
+}
+@media screen and (max-width:400px) {
+    .category .join-list{
+        line-height: 1.25;
+    }
+    .categories-flex{
+        gap:2.25em;
     }
 }
