@@ -64,6 +64,12 @@ function showerror(element,message) {
 function showsuccess(element) {
   const parent = element.parentElement;
   const error = parent.querySelector('.error');
+  const input = parent.querySelector('input');
+  const textarea = parent.querySelector('textarea');
+  if(textarea)
+    textarea.style.borderColor = "#01023b";
+  else
+    input.style.borderColor = "#01023b";
   error.innerHTML = '';
 }
 

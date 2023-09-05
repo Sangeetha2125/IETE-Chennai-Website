@@ -1,0 +1,49 @@
+.knowmore-container {
+  margin-top: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--darkBlue);
+  padding: 20px;
+  margin-bottom: 18vh;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  gap: 20px;
+  background-color: lightblue;
+}
+
+.knowmore-img {
+  flex: 50%;
+}
+
+.knowmore-img img {
+  width: 100%;
+  height: auto;
+}
+
+.knowmore-content {
+  flex: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .knowmore-container {
+    flex-direction: column;
+  }
+  
+  .knowmore-content {
+    text-align: center;
+  }
+}
+
+.knowmore-container h4 {
+  font-size: 1.4rem;
+  color: var(--darkBlue);
+  padding: 15px 5px;
+}
+
+.knowmore-container p {
+  color: var(--darkBlue);
+  padding: 5px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}

@@ -226,9 +226,10 @@
   padding: 20px;
   margin: 2rem;
   border-radius: 10px;
-  background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url("../img/guideline.jpg");
+  background: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)),url("../img/conference.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .registration-details {
@@ -259,4 +260,9 @@
   .registration-details {
     flex-direction: column;
   }
+}
+
+@media screen and (max-width: 400px)
+{
+  
 }

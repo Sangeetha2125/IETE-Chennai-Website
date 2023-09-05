@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    overflow:auto;
 }
 /* About IETE Section */
 .about-iete{
@@ -14,11 +15,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 85vh;
     border-radius: 8px;
     filter: grayscale(0.25);
     margin-top:18vh;
-}
+} 
 .about-iete h1{
    position: absolute;
    top:0;
@@ -32,6 +32,7 @@
 }
 .about-iete img{
     display: none;
+    object-fit: cover;
 }
 .about-iete p{
     position: absolute;
@@ -41,9 +42,9 @@
     border-radius: 8px;
     color: white;
     padding: 1.25em;
-    line-height: 1.75;
+    line-height: 1.3;
     text-align: justify;
-    font-size: 1.025em;
+    font-size: 1.02em;
 }
 
 /* Goals Section */
