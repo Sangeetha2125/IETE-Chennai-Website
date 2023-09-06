@@ -68,10 +68,10 @@
 .category{
     padding: 1.75em;
     flex-grow: 1;
-    /* background-color: rgb(225,225,240); */
+    background-color: rgb(225,225,240);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 4px;
-    background: linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,0.1)),url('../img/events/bluebg.jpg');
+    /* background: linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,0.1)),url('../img/events/bluebg.jpg'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
