@@ -22,17 +22,7 @@
 }
 
 .knowmore-content {
-  flex: 50%;
-}
-
-@media screen and (max-width: 900px) {
-  .knowmore-container {
-    flex-direction: column;
-  }
-  
-  .knowmore-content {
-    text-align: center;
-  }
+  flex: 70%;
 }
 
 .knowmore-container h4 {
@@ -44,6 +34,23 @@
 .knowmore-container p {
   color: var(--darkBlue);
   padding: 5px;
-  line-height: 25px;
+  line-height: 2.5;
   letter-spacing: 1px;
+  font-size: 1.1em;
+}
+
+@media screen and (max-width:1180px) {
+  .knowmore-container p{
+    font-size: 1em;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .knowmore-container {
+    flex-direction: column;
+  }
+  
+  .knowmore-content {
+    text-align: center;
+  }
 }
