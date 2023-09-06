@@ -8,7 +8,7 @@
     height: 15vh;
 }
 .join-container{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 2em auto;
     background  : linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.4)),url('../img/membership.jpg');
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@
     font-size: 1.25em;
 }
 .join-categories{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 2em auto;
     border-radius: 12px;
 }
@@ -70,6 +70,7 @@
     flex-grow: 1;
     background-color: rgb(225,225,240);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 4px;
 }
 .category h2{
     color: rgb(70, 2, 2);
@@ -121,6 +122,12 @@
 }
 .category ul a:hover{
     text-decoration: underline;
+}
+.link-access{
+    background: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url("../img/conference.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width:1300px) {

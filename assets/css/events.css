@@ -228,7 +228,7 @@
   border-radius: 10px;
   background: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)),url("../img/conference.jpg");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
