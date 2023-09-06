@@ -262,7 +262,16 @@
   }
 }
 
-@media screen and (max-width: 400px)
-{
-  
+@media screen and (max-width: 600px) {
+  .chencon-container .heading-div {
+    margin: 1.1rem;
+  }
+
+  .scope {
+    margin: 1.1rem;
+  }
+
+  .guidelines {
+    margin: 1.1rem;
+  }
 }
